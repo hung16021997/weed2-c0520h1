@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành luyện tập if và if else</title>
+</head>
+<body>
+<script>
+    let userName = prompt(" who is therre?","");
+    if(userName == "Admin"){
+        let pass = prompt("Password","");
+        if(pass=="TheMaster"){
+            alert("welcom!");
+        }else if(pass== null){
+            alert("Caneled");
+        }else {
+            alert("wrong password");
+        }
+    }else if(userName== null){
+        alert(" canceled");
+    }else {
+        alert("I do not know you");
+    }
+</script>
+</body>
+</html>
