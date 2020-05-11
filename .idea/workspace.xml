@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9279e47a-ba19-4722-8bf7-ab77e277a5d0" name="Default Changelist" comment="" />
+    <list default="true" id="9279e47a-ba19-4722-8bf7-ab77e277a5d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/thuc_vong_lap_while.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,11 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chi_so_can_nang.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thuc_vong_lap_while.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -81,11 +93,12 @@
         <option value="$PROJECT_DIR$/TH_if_if/else.html" />
         <option value="$PROJECT_DIR$/TH_if_if_else.html" />
         <option value="$PROJECT_DIR$/chi_so_can_nang.html" />
+        <option value="$PROJECT_DIR$/thuc_vong_lap_while.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="712" />
+    <option name="x" value="816" />
     <option name="y" value="23" />
     <option name="width" value="748" />
     <option name="height" value="967" />
@@ -152,15 +165,15 @@
       <workItem from="1589161332085" duration="3121000" />
       <workItem from="1589165523460" duration="69000" />
       <workItem from="1589166067809" duration="2840000" />
-      <workItem from="1589180638037" duration="679000" />
+      <workItem from="1589180638037" duration="1432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6785000" />
+    <option name="totallyTimeSpent" value="7538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="712" y="23" width="748" height="967" extended-state="0" />
+    <frame x="816" y="23" width="748" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24896836" />
@@ -241,6 +254,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thuc_vong_lap_while.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
