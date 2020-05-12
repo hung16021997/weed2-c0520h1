@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+Amount: <input id="amount" type="number">
+FromCurrenxy:
+<select id="from">
+    <option value="23000">VND</option>
+    <option value="1">USD</option>
+
+</select>
+ToCurrency
+<select id="to">
+    <option value="1">USD</option>
+    <option value="23000">VND</option>
+</select>
+<button onclick="convert()" type="button">convert</button>
+<br>
+Ket qua:
+<span id="result"></span>
+
+<script>
+    function convert() {
+        let amount = document.getElementById("amount").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        result = amount * to / from;
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+
+</body>
+</html>
