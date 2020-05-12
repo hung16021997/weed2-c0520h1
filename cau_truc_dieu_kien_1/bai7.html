@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cước điện thoại</title>
+</head>
+<body>
+<label for="family">Hộ gia đình</label>
+<input id="family" type="text" name="family"/><br/><br/>
+<label for="phone">Số thuê bao:</label>
+<input id="phone" type="text" name="phone"/>
+<h3>Bảng giá cước</h3>
+<table border="1px">
+    <tr>
+        <th>Giá cước duy trì (VND)</th>
+        <th>Giá cước gọi nội mạng (VND)</th>
+        <th>Giá cước gọi ngoại mạng (VND)</th>
+    </tr>
+    <tr>
+        <td>30.000</td>
+        <td>300</td>
+        <td>1.000</td>
+    </tr>
+</table><br/>
+<label for="noimang">Thời gian gọi nội mạng (phút): </label>
+<input id="noimang" type="text"/><br/><br/>
+<label for="ngoaimang">Thời gian gọi ngoại mạng (phút): </label>
+<input id="ngoaimang" type="text"/><br/><br/>
+<button type="button" onclick="total()">Thanh toán: </button>
+<p id="tongtien">Tổng tiền: </p>
+<p id="VAT">Thuế GTGT(10%): </p>
+<p id="thanhtoan">Cước điện thoại cần thanh toán (VND): </p>
+<script>
+    function total() {
+        let a = parseFloat(document.getElementById('noimang').value);
+        let b = parseFloat(document.getElementById('ngoaimang').value);
+        if (a > 0 && b > 0) {
+            let d = 30000 + a*300 + b*1000;
+            let e = d*0.1;
+            let x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        } else {
+            alert('Bạn đã nhập sai 1 ô nào đấy')
+        }
+    }
+</script>
+</body>
+</html>

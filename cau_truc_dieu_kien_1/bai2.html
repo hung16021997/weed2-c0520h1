@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điều kiện vào lớp 10</title>
+</head>
+<body>
+<label for="name">Tên của bạn: </label>
+<input id="name" type="text"/><br/><br/>
+<label for="age">Tuổi hiện nay: </label>
+<input id="age" type="text"/><br/><br/>
+<button type="button" onclick="ketQua()">Xác nhận</button>
+<p id="result">Được vào lớp 10 hay không?</p>
+<script>
+    function ketQua() {
+        let a = parseInt(document.getElementById("age").value);
+        let b = document.getElementById('name').value;
+        if (a < 16) {
+            document.getElementById('result').innerHTML = b + " chưa đủ điều kiện vào lớp 10"
+        } else {
+            document.getElementById('result').innerHTML = b + " đủ điều kiện vào lớp 10"
+        }
+    }
+</script>
+</body>
+</html>

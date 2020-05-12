@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MayTinh</title>
+    <style>
+        input{height: 100%;width: 100%;font-size: 20px}
+        #result{text-align: right; font-size: 30px}
+        table{height: 500px; width: 400px}
+    </style>
+    <script src="maytinhdongia.js"></script>
+</head>
+<body>
+<form>
+
+    <table border="1">
+        <tr>
+            <td colspan="4"><input id="result" type="text" width="100%"></td>
+        </tr>
+        <tr>
+            <td><input id="1" type="button" value="1" onclick="Number(this.value)"></td>
+            <td><input id="2" type="button" value="2" onclick="Number(this.value)"></td>
+            <td><input id="3" type="button" value="3" onclick="Number(this.value)"></td>
+            <td><input id="+" type="button" value="+" onclick="Operator(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input id="4" type="button" value="4" onclick="Number(this.value)"></td>
+            <td><input id="5" type="button" value="5" onclick="Number(this.value)"></td>
+            <td><input id="6" type="button" value="6" onclick="Number(this.value)"></td>
+            <td><input id="-" type="button" value="-" onclick="Operator(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input id="7" type="button" value="7" onclick="Number(this.value)"></td>
+            <td><input id="8" type="button" value="8" onclick="Number(this.value)"></td>
+            <td><input id="9" type="button" value="9" onclick="Number(this.value)"></td>
+            <td><input id="*" type="button" value="*" onclick="Operator(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input id="C" type="button" value="C" onclick="Clear()"></td>
+            <td><input id="0" type="button" value="0" onclick="Number(this.value)"></td>
+            <td><input id="=" type="button" value="=" onclick="Result()"></td>
+            <td><input id="/" type="button" value="/" onclick="Operator(this.value)"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

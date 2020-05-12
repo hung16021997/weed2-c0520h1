@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<label for="sothunhat">Số thứ nhất:</label>
+<input id="sothunhat" type="text" name="số thứ nhất: "/><br/><br/>
+<label for="sothuhai">Số thứ hai:</label>
+<input id="sothuhai" type="text" name="số thứ hai: "/><br/><br/>
+<button type="button" onclick="ketQua()">Kiểm tra</button><br/>
+<p id="result">Đáp án:</p>
+<script>
+    function ketQua() {
+        let a = Number(document.getElementById("sothunhat").value);
+        console.log(a)
+        let b = Number(document.getElementById("sothuhai").value);
+        console.log(b)
+        if (a % b === 0) {
+            document.getElementById("result").innerHTML = a + " chia hết cho " + b;
+        } else {
+            document.getElementById("result").innerHTML = a + " không chia hết cho " + b;
+        }
+    }
+</script>
+</body>
+</html>

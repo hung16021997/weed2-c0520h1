@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+<h1>Xếp loại học lực học sinh</h1>
+<label for="name">Học và tên:</label>
+<input id="name" type="text"/><br/><br/>
+<label for="kiemtramieng">Điểm kiểm tra miệnng:</label>
+<input id="kiemtramieng" type="text" size="6"/>
+<label for="kiemtra15p">Điểm kiểm tra 15 phút:</label>
+<input id="kiemtra15p" type="text" size="6"/>
+<label for="kiemtra1tiet">Điểm kiểm tra 1 tiết:</label>
+<input id="kiemtra1tiet" type="text" size="6"/>
+<label for="kiemtragiuaky">Điểm kiểm tra giữa kỳ:</label>
+<input id="kiemtragiuaky" type="text" size="6"/>
+<label for="kiemtracuoiky">Điểm kiểm tra cuối kỳ:</label>
+<input id="kiemtracuoiky" type="text" size="6"/>
+<br/>
+<button type="button" onclick="Click()">Xếp loại</button>
+<p id="tbm">Điểm trung bình môn: </p>
+<p id="hocluc">Xếp loại học lực: </p>
+<script>
+    function Click() {
+        let a = parseFloat(document.getElementById("kiemtramieng").value);
+        console.log(a);
+        let b = parseFloat(document.getElementById('kiemtra15p').value);
+        console.log(b);
+        let c = parseFloat(document.getElementById('kiemtra1tiet').value);
+        console.log(c);
+        let d = parseFloat(document.getElementById('kiemtragiuaky').value);
+        console.log(d);
+        let e = parseFloat(document.getElementById('kiemtracuoiky').value);
+        console.log(e);
+        if (a > 0 && b > 0 && c > 0 && d > 0 && e >0) {
+            let tbc = (a + b + c*2 + d*2 + e*3)/9;
+            document.getElementById("tbm").innerHTML += tbc.toFixed(1);
+            if (tbc > 8.5) {
+                document.getElementById("hocluc").innerHTML += 'Giỏi';
+            } else if (tbc > 7) {
+                document.getElementById('hocluc').innerHTML += 'Khá';
+            } else if (tbc > 5.5) {
+                document.getElementById('hocluc').innerHTML += 'Trung bình khá';
+            } else if (tbc > 4.5) {
+                document.getElementById('hocluc').innerHTML += 'Trung bình';
+            } else {
+                document.getElementById('hocluc').innerHTML += 'yếu';
+            }
+        } else {
+            document.getElementById("tbm").innerHTML += ' Bạn đã nhập sai điểm môn nào đó';
+        }
+    }
+</script>
+</body>
+</html>
