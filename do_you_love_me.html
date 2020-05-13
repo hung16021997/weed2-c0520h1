@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form>
+    <p> Do You Love Me ?</p>
+    <input type="button" value="Yes" onclick="Yes()">
+
+    <input type="button" id="Random" value="No" onmouseover="No()" style="position: absolute">
+
+
+
+</form>
+
+<script >
+    function Yes() {
+        alert( " Yes are you right");
+
+    }
+
+
+
+    function No() {
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random()* window.innerHeight;
+        document.getElementById('Random').style.left = x+ "px";
+        document.getElementById( 'Random').style.top = y + 'px';
+
+    }
+</script>
+</body>
+</html>
