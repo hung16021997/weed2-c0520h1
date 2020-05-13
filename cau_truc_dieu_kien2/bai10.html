@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<label for="family">Hộ gia đình</label>
+<input id="family" type="text" name="family"/><br/><br/>
+<label for="maso">Mã số gia đình:</label>
+<input id="maso" type="text" name="maso"/>
+<h3>Bảng giá cước</h3>
+<table border="1">
+    <tr>
+        <th>Bậc giá</th>
+        <th>Biểu giá</th>
+    </tr>
+    <tr>
+        <td>Bậc 1: Từ 0 - 50 (kWh)</td>
+        <td>1.678</td>
+    </tr>
+    <tr>
+        <td>Bậc 2: Từ 51 - 100 (kWh)</td>
+        <td>1.734</td>
+    </tr>
+    <tr>
+        <td>Bậc 3: Từ 101 - 200 (kWh)</td>
+        <td>2.014</td>
+    </tr>
+    <tr>
+        <td>Bậc 4: Từ 201 - 300 (kWh)</td>
+        <td>2.536</td>
+    </tr>
+    <tr>
+        <td>Bậc 5: Từ 301 - 400 (kWh)</td>
+        <td>2.834</td>
+    </tr>
+    <tr>
+        <td>Bậc 6: Từ 401 trở lên (kWh)</td>
+        <td>2.927</td>
+    </tr>
+</table><br/>
+<label for="sodien">Số điện tiêu dùng (kWh): </label>
+<input id="sodien" type="text"/><br/><br/>
+<button type="button" onclick="total()">Thanh toán: </button>
+<p id="tongtien">Tổng tiền: </p>
+<p id="VAT">Thuế GTGT(10%): </p>
+<p id="thanhtoan">Cần thanh toán (VND): </p>
+<script>
+    function total() {
+        let a = parseFloat(document.getElementById('sodien').value);
+        let d;
+        let e;
+        let x;
+        if (a > 0 && a <= 50) {
+            d = a*1678;
+            e = d*0.1;
+            x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        } else if (a>50 && a<=100) {
+            d = 50*1678 + (a-50)*1734;
+            e = d*0.1;
+            x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        } else if (a>100 && a<=200) {
+            d = 50*(1678 + 1734) + a*2014;
+            e = d*0.1;
+            x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        } else if (a>200 && a<=300) {
+            d = 50*(1678 + 1734) + 100*2014 + a*2536;
+            e = d*0.1;
+            x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        }else if (a>300 && a<=400) {
+            d = 50*(1678 + 1734) + 100*(2014 + 2536) + a*2834;
+            e = d*0.1;
+            x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        }else if (a>400) {
+            d = 50*(1678 + 1734) + 100*(2014 + 2536 + 2834) + a*2927;
+            e = d*0.1;
+            x = d + e;
+            document.getElementById("tongtien").innerHTML += d.toFixed(0);
+            document.getElementById("VAT").innerHTML += e.toFixed(0);
+            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+        }
+    }
+</script>
+</body>
+</html>

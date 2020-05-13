@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai11</title>
+</head>
+<body>
+<script>
+    let tien = Number(prompt("nhap so tien"));
+    if (tien <= 4000000){
+        document.write("không mất thuế");
+    }else if (tien > 4000000 && tien <= 6000000){
+        thue = tien / 100 * 5;
+        document.write("tien thue = " + thue);
+    }else if (tien > 6000000 && tien <= 9000000) {
+        thue = tien / 100 * 10;
+        document.write("tien thue = " + thue);
+    }
+    else if (tien > 9000000 && tien <= 14000000) {
+        thue = tien / 100 * 15;
+        document.write("tien thue = " + thue);
+    }else if (tien > 14000000 && tien <= 24000000) {
+        thue = tien / 100 * 20;
+        document.write("tien thue = " + thue);
+    }else if (tien > 24000000 && tien <= 44000000) {
+        thue = tien / 100 * 25;
+        document.write("tien thue = " + thue);
+    }else if (tien > 44000000 && tien <= 84000000) {
+        thue = tien / 100 * 30;
+        document.write("tien thue = " + thue);
+    }else if (tien > 84000000) {
+        thue = tien / 100 * 35;
+        document.write("tien thue = " + thue);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi nhiệt độ</title>
+</head>
+<body>
+<label for="nhietdo">oC</label>
+<input id="nhietdo" type="text"/>
+<button type="button" onclick="ketQua()">Covert</button>
+<p id="result">Kết quả: </p>
+<script>
+    function ketQua() {
+        let c = parseFloat(document.getElementById("nhietdo").value);
+        let f = c*9/5+32;
+        document.getElementById('result').innerHTML += f.toFixed(2) + " oF";
+    }
+</script>
+</body>
+</html>

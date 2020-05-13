@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<p id="result"> result :</p>
+<script>
+    let a = Number(prompt("nhap a"));
+    let b = Number(prompt(" nhap b"));
+    let c = Number(prompt(" nhap c"));
+    if ( a, b, c >0){
+        if (a+b>c && a+c>b && b+c>a){
+            document.getElementById("result").innerHTML += " đây là cạnh của hình tam giác";
+        }else{
+            document.getElementById("result").innerHTML += "đây không phải cạnh của hình tam giác";
+        }
+    }
+</script>
+</body>
+</html>

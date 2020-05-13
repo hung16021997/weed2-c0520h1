@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<!--<p id="result">kết quả</p>-->
+<!--<script>-->
+    <!--let x = Number(prompt("nhập độ dài 'm' :"));-->
+    <!--let f = x * 3.2808;-->
+    <!--document.getElementById("result").innerHTML = f;-->
+<!--</script>-->
+<strong id="result">Kết quả: </strong>
+<script>
+    let x = parseFloat(prompt("Nhập độ dài (m): "));
+    let f = x*3.2808;
+    document.getElementById('result').innerHTML += f.toFixed(3) + " ft";
+</script>
+</body>
+</html>

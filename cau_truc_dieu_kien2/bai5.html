@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình tam giác vuông</title>
+</head>
+<body>
+<p id="result">Diện tích hình vuông là: </p>
+<script>
+    let a = parseFloat(prompt("Nhập số đo cạnh a: "));
+    let b = parseFloat(prompt("Nhập số đo cạnh b: "));
+    if (a>0 && b>0) {
+        let s = a*b/2;
+        document.getElementById('result').innerHTML += s.toFixed(2) + " m2";
+    } else {
+        alert("Bạn đã nhập sai");
+    }
+</script>
+</body>
+</html>
