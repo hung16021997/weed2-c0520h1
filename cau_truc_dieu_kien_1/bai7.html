@@ -32,13 +32,13 @@
     function total() {
         let a = parseFloat(document.getElementById('noimang').value);
         let b = parseFloat(document.getElementById('ngoaimang').value);
-        if (a > 0 && b > 0) {
+        if (a >= 0 && b >= 0) {
             let d =  a*300 + b*1000;
             let e = d*0.1;
             let x = d + e;
-            document.getElementById("tongtien").innerHTML += d.toFixed(0);
-            document.getElementById("VAT").innerHTML += e.toFixed(0);
-            document.getElementById("thanhtoan").innerHTML += x.toFixed(0);
+            document.getElementById("tongtien").innerHTML += d;
+            document.getElementById("VAT").innerHTML += e;
+            document.getElementById("thanhtoan").innerHTML += x;
         } else {
             alert('Bạn đã nhập sai 1 ô nào đấy')
         }
