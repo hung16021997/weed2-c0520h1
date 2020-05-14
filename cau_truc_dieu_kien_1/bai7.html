@@ -12,12 +12,10 @@
 <h3>Bảng giá cước</h3>
 <table border="1px">
     <tr>
-        <th>Giá cước duy trì (VND)</th>
         <th>Giá cước gọi nội mạng (VND)</th>
         <th>Giá cước gọi ngoại mạng (VND)</th>
     </tr>
     <tr>
-        <td>30.000</td>
         <td>300</td>
         <td>1.000</td>
     </tr>
@@ -35,7 +33,7 @@
         let a = parseFloat(document.getElementById('noimang').value);
         let b = parseFloat(document.getElementById('ngoaimang').value);
         if (a > 0 && b > 0) {
-            let d = 30000 + a*300 + b*1000;
+            let d =  a*300 + b*1000;
             let e = d*0.1;
             let x = d + e;
             document.getElementById("tongtien").innerHTML += d.toFixed(0);
