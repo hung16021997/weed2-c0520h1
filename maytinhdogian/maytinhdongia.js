@@ -14,7 +14,7 @@ function Operator(Value) {
     Array.push(operator);
 }
 function Result() {
-    var result="";
+    let result="";
     for(let i = 0;i<Array.length;i++)
     {
         result+=Array[i];

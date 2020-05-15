@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Cheap Fast</title>
+</head>
+<body>
+<form action="#">
+    <fieldset style="width:20%">
+        <table>
+            <tr>
+                <td>Good</td>
+                <td><input type="checkbox" id="good"  value="true" onclick="y()" ><br></td>
+            </tr>
+            <tr>
+                <td>Fast</td>
+                <td><input type="checkbox" id="fast"  value="true" onclick="x()" ><br></td>
+            </tr>
+            <tr>
+                <td>Cheap</td>
+                <td><input type="checkbox" id="cheap" value="true" onclick="z() " ><br></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<script>
+    let good = document.getElementById("good");
+    let fast = document.getElementById("fast");
+    let cheap = document.getElementById("cheap");
+    function z() {
+        if (cheap.checked === true && good.checked === true) {
+            if (fast.checked === true) {
+                good.checked = false;
+            }
+        }
+    }
+    function y() {
+        if (fast.checked === true && good.checked === true) {
+            if (cheap.checked === true) {
+                fast.checked = false;
+            }
+        }
+    }
+    function x() {
+        if (fast.checked === true && cheap.checked === true) {
+            if (good.checked === true) {
+                cheap.checked = false;
+            }
+        }
+    }
+</script>
+</body>
+</html>
